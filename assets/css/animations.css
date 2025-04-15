@@ -1,0 +1,33 @@
+/* Animasyon Stilleri */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake-animation {
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.animate-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-center {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.8s ease-out;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-left.animate, .animate-center.animate, .animate-right.animate {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
