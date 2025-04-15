@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+// URL'den "index.html" ifadesini kaldır
+if(window.location.href.indexOf("index.html") > -1) {
+    var cleanURL = window.location.href.replace(/\/index.html$/, '/');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>IEEE THKÜ - Geçmiş Etkinliklerimiz</title>
+    <meta name="description" content="IEEE THKÜ Öğrenci Kolu geçmiş etkinlikleri, düzenlediğimiz tüm etkinlikler, konferanslar, seminerler ve workshoplar.">
+    <meta name="keywords" content="IEEETHKÜ, ieee, ieeeutaa, IEEEUTAA, utaa, ieee utaa, ieee thkü, ieee thk, thkü ieee, utaa ieee, geçmiş etkinlikler, konferans, seminer, workshop">
+    <meta name="theme-color" content="#517c97">
+    <meta name="language" content="Turkish">
+    <link rel="icon" type="image/png" sizes="300x250" href="../../assets/img/ieeethku.png">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+</head>
+
+<body class="etkinlikler-gecmis">
+    <div id="top">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../assets/img/ieeethkumavi.png" alt="IEEE UTAA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../../hakkimizda/yonetim/index.html">Yönetim Kurulu</a>
+                                <a class="dropdown-item" href="../../hakkimizda/idari/index.html">İdari Kurul</a>
+                                <a class="dropdown-item" href="../../hakkimizda/denetim/index.html">Danışma Denetim Kurulu</a>
+                                <a class="dropdown-item" href="../../hakkimizda/niyet/index.html">Niyet Mektupları</a>
+                                <a class="dropdown-item" href="../../assets/belgeler/2425tuzuk.pdf">Güncel Tüzük</a>
+                                <a class="dropdown-item" href="../../hakkimizda/ekipler/index.html">Eski Ekiplerimiz</a>
+                                <a class="dropdown-item" href="../../hakkimizda/emegigecenler/index.html">Emeği Geçenler</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownKomite" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Komitelerimiz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownKomite">
+                                <a class="dropdown-item" href="../../komiteler/aess/index.html">AESS - Havacılık ve Uzay Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/cs/index.html">CS - Bilgisayar Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/dp/index.html">DP - Dijital Yayıncılık Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/ea/index.html">EA - Educational Activities Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/ide/index.html">IDE - Fikir Komitesi</a>
+
+                                <a class="dropdown-item" href="../../komiteler/pes/index.html">PES - Güç ve Enerji Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/ras/index.html">RAS - Robotik ve Otomasyon Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/sosyo/index.html">ST - Sosyo Teknik Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/tt/index.html">TT - Tanıtım ve Tasarım Komitesi</a>
+                                <a class="dropdown-item" href="../../komiteler/wie/index.html">WIE - Mühendislikte Kadınlar Komitesi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html" style="position: relative; font-weight: bold; color: white !important; background-color: var(--main-color); border-radius: 8px; box-shadow: 0 0 20px rgba(81, 124, 151, 0.7); padding: 8px 12px; margin: -8px 0; transform: scale(1.1); z-index: 100; text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Etkinliklerimiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../blog/index.html">Blog ve Haberler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../sponsorluk/index.html">Sponsorluk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://forms.gle/4a8YBsiRfZxEAsgx6">Üye Ol</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Başlık Kısmı -->
+    <div class="events-header">
+        <h1>GEÇMİŞ ETKİNLİKLERİMİZ</h1>
+    </div>
+
+    <!-- Geçmiş Etkinlikler Arşivi -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h2 class="text-center" style="color: var(--main-color);">ETKİNLİK ARŞİVİMİZ</h2>
+                <p class="text-center mb-4">IEEE THKÜ Öğrenci Kolu tarafından düzenlenen tüm etkinliklerin arşivi</p>
+            </div>
+        </div>
+
+        <!-- Yıl Filtreleme -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="event-filter text-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">Tümü</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="2025">2025</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="2024">2024</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="2023">2023</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2025 Etkinlikleri -->
+        <div class="event-year" id="2025">
+            <h3 class="year-title">2025</h3>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare2.png" alt="Kadınlar Günü Paneli" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">8 Mart 2025</span>
+                            <h3>Kadınlar Günü Özel Paneli</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THKÜ Konferans Salonu</p>
+                            <p>Mühendislik alanında başarılı kadınlarla ilham verici bir panel gerçekleştirdik. Türkiye'nin önde gelen havacılık ve uzay şirketlerinden katılan konuşmacılarımız kariyer yolculuklarını ve sektördeki deneyimlerini paylaştılar.</p>
+                            <p>Konuşmacılar: Prof. Dr. Aylin Yılmaz (THKÜ), Dr. Sevgi Demir (TAI), Müh. Zeynep Koç (THY)</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Etkinlik Videosu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare1.png" alt="Yazılım Semineri" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">15 Şubat 2025</span>
+                            <h3>Yazılım Geliştirme Semineri</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> Mühendislik Fakültesi Lab-3</p>
+                            <p>Modern yazılım geliştirme metodolojileri ve teknolojileri hakkında bilgilendirici bir seminer düzenledik. Katılımcılar agile metodolojileri, CI/CD süreçleri ve DevOps pratikleri konusunda bilgiler edindiler.</p>
+                            <p>Eğitmen: Ahmet Yılmaz (Senior Software Developer, Microsoft)</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Sunum Dosyası</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2024 Etkinlikleri -->
+        <div class="event-year" id="2024">
+            <h3 class="year-title">2024</h3>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare2.png" alt="Teknik Gezi" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">20 Aralık 2024</span>
+                            <h3>THY Teknik Merkezi Gezisi</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THY Teknik A.Ş. Sabiha Gökçen</p>
+                            <p>Türk Hava Yolları Teknik A.Ş.'ye düzenlediğimiz teknik gezi ile havacılık bakım süreçlerini yerinde inceledik. Katılımcılar uçak bakım hangarlarını gezme ve mühendislerden bilgi alma fırsatı buldular.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare1.png" alt="Tanışma Etkinliği" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">10 Ekim 2024</span>
+                            <h3>IEEE THKÜ Tanışma Etkinliği</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THKÜ Ana Kampüs</p>
+                            <p>Yeni dönem başlangıcında tüm üyelerimizle bir araya geldik ve komitelerimizi tanıttık. IEEE THKÜ'nün vizyon ve misyonunun yanı sıra yıl içinde planladığımız etkinliklerden bahsettik. Üyelerimiz birbirleriyle tanışma ve komitelerimize katılma fırsatı buldular.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Komite Sunumları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare2.png" alt="Drone Yarışması" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">5 Mayıs 2024</span>
+                            <h3>THKÜ Drone Yarışması</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THKÜ Spor Salonu</p>
+                            <p>İlk kez düzenlediğimiz drone yarışmasında farklı üniversitelerden takımlar bir araya geldi. Engelli parkurda en hızlı ve en düşük hata puanıyla tamamlayan takımlar ödüllendirildi. Yarışmaya 12 üniversiteden 25 takım katıldı.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Yarışma Sonuçları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023 Etkinlikleri -->
+        <div class="event-year" id="2023">
+            <h3 class="year-title">2023</h3>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare1.png" alt="Havacılık Zirvesi" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">12 Aralık 2023</span>
+                            <h3>Havacılık ve Uzay Teknolojileri Zirvesi</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THKÜ Kongre Merkezi</p>
+                            <p>Türkiye'nin havacılık ve uzay teknolojileri alanında uzman isimlerin katıldığı zirvemizde, sektörün geleceği ve kariyer fırsatları ele alındı. İki gün süren etkinliğimizde 15 konuşmacı ve 500'den fazla katılımcı ağırladık.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Sunum Dosyaları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik -->
+            <div class="past-event-large">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/etkinlikkare2.png" alt="Yapay Zeka Workshop" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="past-event-details">
+                            <span class="past-event-date">25 Eylül 2023</span>
+                            <h3>Yapay Zeka ve Havacılık Workshop</h3>
+                            <p class="event-location"><i class="fa fa-map-marker"></i> THKÜ Bilgisayar Laboratuvarı</p>
+                            <p>Havacılık sektöründe yapay zeka uygulamalarına odaklanan bu workshop'ta, uçuş verilerinin analizi, bakım tahminleme ve otonom sistemler üzerine uygulamalı çalışmalar gerçekleştirdik. Katılımcılar Python ve TensorFlow kullanarak örnek projeler geliştirdiler.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Workshop Materyalleri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Bölümü -->
+    <div style="background: #f5f5f5; padding: 60px 0;">
+        <div class="container">
+            <h2 id="iletisim-baslik" style="color: var(--main-color); font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 40px;">İLETİŞİM</h2>
+            
+            <div class="row">
+                <!-- İletişim Bilgileri -->
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info">
+                        <h3 style="color: var(--main-color); font-size: 1.5rem; margin-bottom: 20px;">IEEE THKÜ Öğrenci Kolu</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fa fa-envelope contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>E-Posta</h4>
+                                <p><a href="mailto:kurumsal@ieeeutaa.com.tr">kurumsal@ieeeutaa.com.tr</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact mt-4">
+                            <h4 style="color: var(--main-color); margin-bottom: 15px;">Sosyal Medya</h4>
+                            <a href="https://www.linkedin.com/company/ieeethku/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/ieeethku/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+                            <a href="https://taplink.cc/ieeethku" target="_blank" class="social-icon"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Etkinlik Duyurular -->
+                <div class="col-lg-7">
+                    <div class="event-subscription-box">
+                        <h3 style="color: var(--main-color);">Etkinlik Duyurularımız</h3>
+                        <p>Etkinliklerimizden haberdar olmak için e-posta listemize kaydolun. IEEE THKÜ olarak düzenlediğimiz tüm etkinliklerden anında haberdar olabilir, katılım linklerine erken erişim sağlayabilirsiniz.</p>
+                        <form class="event-subscription-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">Kaydol</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-dark">
+        <div class="container-fluid">
+            <p class="copyright">2025 Copyright © Tüm Hakları Saklıdır. IEEE THKÜ Öğrenci Kolu</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/counter.js"></script>
+    <script src="../../assets/js/untitled.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const socialLinks = document.querySelector('.social-links');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                socialLinks.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                socialLinks.classList.remove('visible');
+            }
+        });
+
+        // Yıl filtreleme işlevselliği
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.event-filter .btn');
+            const eventYears = document.querySelectorAll('.event-year');
+            
+            // Filtreleme işlevi
+            function filterEvents(filter) {
+                if (filter === 'all') {
+                    eventYears.forEach(year => {
+                        year.style.display = 'block';
+                    });
+                } else {
+                    eventYears.forEach(year => {
+                        if (year.id === filter) {
+                            year.style.display = 'block';
+                        } else {
+                            year.style.display = 'none';
+                        }
+                    });
+                }
+            }
+            
+            // Buton tıklama olayları
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Aktif sınıfını değiştir
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Etkinlikleri filtrele
+                    const filter = this.getAttribute('data-filter');
+                    filterEvents(filter);
+                });
+            });
+        });
+
+        // Manuel olarak Etkinlikler menüsünü aktifleştir
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Geçmiş etkinlikler sayfası yüklendi - manuel aktifleştirme başlıyor");
+            
+            // Önce TÜM linklerdeki active sınıflarını temizle 
+            document.querySelectorAll('.nav-link').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Dropdown linklerinden de active sınıfını kaldır
+            document.querySelectorAll('.nav-link.dropdown-toggle').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Hakkımızda menüsünden kesinlikle active sınıfını kaldır
+            const hakkimizdaLink = document.querySelector('.nav-link.dropdown-toggle[id="navbarDropdown"]');
+            if (hakkimizdaLink && hakkimizdaLink.classList.contains('active')) {
+                hakkimizdaLink.classList.remove('active');
+                console.log("Hakkımızda menüsünden active sınıfı kaldırıldı");
+            }
+            
+            // Etkinlikler menüsünü aktifleştir - bu sayfada href="../index.html" şeklinde
+            const etkinliklerLink = document.querySelector('.nav-link[href="../index.html"]');
+            if (etkinliklerLink) {
+                etkinliklerLink.classList.add('active');
+                console.log("Etkinlikler menüsü manuel olarak aktifleştirildi");
+                // Aktifleştirme için global değişken tanımla
+                window.menuManuallyActivated = true;
+                console.log("menuManuallyActivated = true olarak ayarlandı");
+            } else {
+                console.error("Etkinlikler menüsü bulunamadı!");
+                // Alternatif: doğrudan seçiciyi değiştirmeyi dene
+                const altLinks = document.querySelectorAll('.nav-link');
+                altLinks.forEach(function(link) {
+                    if (link.textContent.trim() === "Etkinliklerimiz") {
+                        link.classList.add('active');
+                        console.log("Etkinlikler menüsü içerik tabanlı aktifleştirildi");
+                        window.menuManuallyActivated = true;
+                        console.log("menuManuallyActivated = true olarak ayarlandı");
+                    }
+                });
+            }
+        });
+
+        // Filtre düğmeleri için event listener'ları
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.event-filter .btn');
+            const eventYears = document.querySelectorAll('.event-year');
+            
+            // Filtreleme işlevi
+            function filterEvents(filter) {
+                if (filter === 'all') {
+                    eventYears.forEach(year => {
+                        year.style.display = 'block';
+                    });
+                } else {
+                    eventYears.forEach(year => {
+                        if (year.id === filter) {
+                            year.style.display = 'block';
+                        } else {
+                            year.style.display = 'none';
+                        }
+                    });
+                }
+            }
+            
+            // Buton tıklama olayları
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Aktif sınıfını değiştir
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Etkinlikleri filtrele
+                    const filter = this.getAttribute('data-filter');
+                    filterEvents(filter);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

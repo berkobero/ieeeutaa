@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+// URL'den "index.html" ifadesini kaldır
+if(window.location.href.indexOf("index.html") > -1) {
+    var cleanURL = window.location.href.replace(/\/index.html$/, '/');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>IEEE THKÜ - Etkinliklerimiz</title>
+    <meta name="description" content="IEEE THKÜ Öğrenci Kolu etkinlikleri, geçmiş ve yaklaşan etkinlikler, etkinlik takvimi ve detayları.">
+    <meta name="keywords" content="IEEETHKÜ, ieee, ieeeutaa, IEEEUTAA, utaa, ieee utaa, ieee thkü, ieee thk, thkü ieee, utaa ieee, etkinlikler, konferans, seminer, workshop">
+    <meta name="theme-color" content="#517c97">
+    <meta name="language" content="Turkish">
+    <link rel="icon" type="image/png" sizes="300x250" href="../assets/img/ieeethku.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+
+<body>
+    <div id="top">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/ieeethkumavi.png" alt="IEEE UTAA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../hakkimizda/yonetim/index.html">Yönetim Kurulu</a>
+                                <a class="dropdown-item" href="../hakkimizda/idari/index.html">İdari Kurul</a>
+                                <a class="dropdown-item" href="../hakkimizda/denetim/index.html">Danışma Denetim Kurulu</a>
+                                <a class="dropdown-item" href="../hakkimizda/niyet/index.html">Niyet Mektupları</a>
+                                <a class="dropdown-item" href="../assets/belgeler/2425tuzuk.pdf">Güncel Tüzük</a>
+                                <a class="dropdown-item" href="../hakkimizda/ekipler/index.html">Eski Ekiplerimiz</a>
+                                <a class="dropdown-item" href="../hakkimizda/emegigecenler/index.html">Emeği Geçenler</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownKomite" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Komitelerimiz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownKomite">
+                                <a class="dropdown-item" href="../komiteler/aess/index.html">AESS - Havacılık ve Uzay Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/cs/index.html">CS - Bilgisayar Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/dp/index.html">DP - Dijital Yayıncılık Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ea/index.html">EA - Educational Activities Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ide/index.html">IDE - Fikir Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/pes/index.html">PES - Güç ve Enerji Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ras/index.html">RAS - Robotik ve Otomasyon Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/sosyo/index.html">ST - Sosyo Teknik Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/tk/index.html">TK - Tanıtım ve Tanıtım ve Tasarım Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/wie/index.html">WIE - Mühendislikte Kadınlar Komitesi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="#" style="position: relative; font-weight: bold; color: white !important; background-color: var(--main-color); border-radius: 8px; box-shadow: 0 0 20px rgba(81, 124, 151, 0.7); padding: 8px 12px; margin: -8px 0; transform: scale(1.1); z-index: 100; text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Etkinliklerimiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../blog/index.html">Blog ve Haberler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../sponsorluk/index.html">Sponsorluk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://forms.gle/4a8YBsiRfZxEAsgx6">Üye Ol</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Başlık Kısmı -->
+    <div class="events-header">
+        <h1>ETKİNLİKLERİMİZ</h1>
+    </div>
+
+    <!-- Etkinlik Takvimi Bölümü -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h2 class="text-center" style="color: var(--main-color);">ETKİNLİK TAKVİMİ</h2>
+                <p class="text-center mb-4">IEEE THKÜ Öğrenci Kolu tarafından düzenlenen etkinlikleri takvimde görebilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav-btn prev" id="prevMonth"><i class="fa fa-chevron-left"></i></button>
+                        <h3 id="currentMonth">Mart 2025</h3>
+                        <button class="calendar-nav-btn next" id="nextMonth"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div class="weekday">Pzt</div>
+                        <div class="weekday">Sal</div>
+                        <div class="weekday">Çar</div>
+                        <div class="weekday">Per</div>
+                        <div class="weekday">Cum</div>
+                        <div class="weekday">Cmt</div>
+                        <div class="weekday">Paz</div>
+                    </div>
+                    <div class="calendar-days" id="calendarDays">
+                        <!-- JavaScript ile doldurulacak -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yaklaşan Etkinlikler Bölümü -->
+    <div style="background: var(--main-color); padding: 60px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <h2 class="text-center" style="color: var(--background);">SON DÜZENLENEN ETKİNLİKLER</h2>
+                    <p class="text-center mb-4" style="color: var(--background);">Katılabileceğiniz ya da yakın zamanda yapılan etkinliklerimiz</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Etkinlik Kartı 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../assets/img/etkinlikkare1.png" alt="Havacılık Paneli" class="img-fluid">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">NİS</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Havacılık ve Uzay Teknolojileri Paneli</h3>
+                            <div class="event-info">
+                                <p><i class="fa fa-clock-o"></i> 14:00 - 17:00</p>
+                                <p><i class="fa fa-map-marker"></i> THKÜ Konferans Salonu</p>
+                            </div>
+                            <p class="event-description">Sektörün önde gelen uzmanlarıyla havacılık ve uzay teknolojilerinin geleceğini konuşacağız.</p>
+                            <a href="#" class="btn btn-light event-button">Detaylar ve Kayıt</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etkinlik Kartı 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../assets/img/etkinlikkare2.png" alt="Robotik Workshop" class="img-fluid">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">NİS</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Robotik Programlama Workshop</h3>
+                            <div class="event-info">
+                                <p><i class="fa fa-clock-o"></i> 10:00 - 16:00</p>
+                                <p><i class="fa fa-map-marker"></i> Mühendislik Fakültesi Lab-3</p>
+                            </div>
+                            <p class="event-description">Temel robotik ve programlama bilgilerini uygulamalı olarak öğreneceğimiz bir günlük workshop.</p>
+                            <a href="#" class="btn btn-light event-button">Detaylar ve Kayıt</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etkinlik Kartı 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="../assets/img/etkinlikkare1.png" alt="Kariyer Günü" class="img-fluid">
+                            <div class="event-date">
+                                <span class="day">30</span>
+                                <span class="month">NİS</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Mühendislikte Kariyer Günü</h3>
+                            <div class="event-info">
+                                <p><i class="fa fa-clock-o"></i> 09:00 - 17:00</p>
+                                <p><i class="fa fa-map-marker"></i> THKÜ Ana Kampüs</p>
+                            </div>
+                            <p class="event-description">Farklı sektörlerden şirketlerin katılımıyla düzenlenecek kariyer ve staj imkanları etkinliği.</p>
+                            <a href="#" class="btn btn-light event-button">Detaylar ve Kayıt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Geçmiş Etkinlikler Bölümü -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h2 class="text-center" style="color: var(--main-color);">GEÇMİŞ ETKİNLİKLER</h2>
+                <p class="text-center mb-4">IEEE THKÜ Öğrenci Kolu'nun düzenlediği geçmiş etkinlikler</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Geçmiş Etkinlik 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="past-event">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="../assets/img/etkinlikkare2.png" alt="Kadınlar Günü Paneli" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="past-event-details">
+                                <span class="past-event-date">8 Mart 2025</span>
+                                <h3>Kadınlar Günü Özel Paneli</h3>
+                                <p>Mühendislik alanında başarılı kadınlarla ilham verici bir panel gerçekleştirdik.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="past-event">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="../assets/img/etkinlikkare1.png" alt="Yazılım Semineri" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="past-event-details">
+                                <span class="past-event-date">15 Şubat 2025</span>
+                                <h3>Yazılım Geliştirme Semineri</h3>
+                                <p>Modern yazılım geliştirme metodolojileri ve teknolojileri hakkında bilgilendirici bir seminer düzenledik.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="past-event">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="../assets/img/etkinlikkare2.png" alt="Teknik Gezi" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="past-event-details">
+                                <span class="past-event-date">20 Ocak 2025</span>
+                                <h3>THY Teknik Merkezi Gezisi</h3>
+                                <p>Türk Hava Yolları Teknik A.Ş.'ye düzenlediğimiz teknik gezi ile havacılık bakım süreçlerini yerinde inceledik.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geçmiş Etkinlik 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="past-event">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="../assets/img/etkinlikkare1.png" alt="Tanışma Etkinliği" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="past-event-details">
+                                <span class="past-event-date">10 Ekim 2024</span>
+                                <h3>IEEE THKÜ Tanışma Etkinliği</h3>
+                                <p>Yeni dönem başlangıcında tüm üyelerimizle bir araya geldik ve komitelerimizi tanıttık.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Etkinlik Fotoğrafları</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daha Fazla Etkinlik Butonu -->
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                <a href="./gecmisetkinlikler/index.html" class="btn btn-primary">Tüm Geçmiş Etkinliklerimiz</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim ve Konum Bölümü -->
+    <div style="background: #f5f5f5; padding: 60px 0;">
+        <div class="container">
+            <h2 id="iletisim-baslik" style="color: var(--main-color); font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 40px;">İLETİŞİM</h2>
+            
+            <div class="row">
+                <!-- İletişim Bilgileri -->
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info">
+                        <h3 style="color: var(--main-color); font-size: 1.5rem; margin-bottom: 20px;">IEEE THKÜ Öğrenci Kolu</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fa fa-envelope contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>E-Posta</h4>
+                                <p><a href="mailto:kurumsal@ieeeutaa.com.tr">kurumsal@ieeeutaa.com.tr</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-contact mt-4">
+                            <h4 style="color: var(--main-color); margin-bottom: 15px;">Sosyal Medya</h4>
+                            <a href="https://www.linkedin.com/company/ieeethku/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/ieeethku/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+                            <a href="https://taplink.cc/ieeethku" target="_blank" class="social-icon"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Etkinlik Duyurular -->
+                <div class="col-lg-7">
+                    <div class="event-subscription-box">
+                        <h3 style="color: var(--main-color);">Etkinlik Duyurularımız</h3>
+                        <p>Etkinliklerimizden haberdar olmak için e-posta listemize kaydolun. IEEE THKÜ olarak düzenlediğimiz tüm etkinliklerden anında haberdar olabilir, katılım linklerine erken erişim sağlayabilirsiniz.</p>
+                        <form class="event-subscription-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">Kaydol</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-dark">
+        <div class="container-fluid">
+            <p class="copyright">2025 Copyright © Tüm Hakları Saklıdır. IEEE THKÜ Öğrenci Kolu</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/counter.js"></script>
+    <script src="../assets/js/untitled.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const socialLinks = document.querySelector('.social-links');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                socialLinks.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                socialLinks.classList.remove('visible');
+            }
+        });
+
+        // Manuel olarak Etkinlikler menüsünü aktifleştir
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Etkinlikler sayfası yüklendi - manuel aktifleştirme başlıyor");
+            
+            // Önce TÜM linklerdeki active sınıflarını temizle
+            document.querySelectorAll('.nav-link').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Dropdown linklerinden de active sınıfını kaldır
+            document.querySelectorAll('.nav-link.dropdown-toggle').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Hakkımızda menüsünden kesinlikle active sınıfını kaldır
+            const hakkimizdaLink = document.querySelector('.nav-link.dropdown-toggle[id="navbarDropdown"]');
+            if (hakkimizdaLink && hakkimizdaLink.classList.contains('active')) {
+                hakkimizdaLink.classList.remove('active');
+                console.log("Hakkımızda menüsünden active sınıfı kaldırıldı");
+            }
+            
+            // Etkinlikler menüsünü aktifleştir
+            const etkinliklerLink = document.querySelector('.nav-link[href="#"]');
+            if (etkinliklerLink) {
+                etkinliklerLink.classList.add('active');
+                console.log("Etkinlikler menüsü manuel olarak aktifleştirildi");
+                
+                // Aktifleştirme için global değişken tanımla
+                window.menuManuallyActivated = true;
+                console.log("menuManuallyActivated = true olarak ayarlandı");
+            } else {
+                console.error("Etkinlikler menüsü bulunamadı!");
+            }
+        });
+
+        // Sayfa yüklendiğinde takvimi oluştur
+        document.addEventListener('DOMContentLoaded', function() {
+            // Etkinlik verilerini tanımlayalım
+            const events = [
+                { date: new Date(2025, 2, 8), title: 'Kadınlar Günü Etkinliği' },   // Mart 8, 2025
+                { date: new Date(2025, 2, 15), title: 'Havacılık ve Uzay Teknolojileri Paneli' },  // Mart 15, 2025
+                { date: new Date(2025, 2, 22), title: 'Robotik Programlama Workshop' },  // Mart 22, 2025
+                { date: new Date(2025, 2, 30), title: 'Mühendislikte Kariyer Günü' },    // Mart 30, 2025
+            ];
+            
+            // Başlangıç tarihi
+            let currentDate = new Date(2025, 2, 1); // Mart 2025
+            
+            // Takvimi oluştur
+            function renderCalendar() {
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+                
+                // Ay ve yıl başlığını güncelle
+                const monthNames = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
+                                    "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+                document.getElementById('currentMonth').innerText = `${monthNames[month]} ${year}`;
+                
+                // Ayın ilk günü
+                const firstDayOfMonth = new Date(year, month, 1);
+                // Ayın son günü
+                const lastDayOfMonth = new Date(year, month + 1, 0);
+                
+                // İlk günün haftanın kaçıncı günü olduğunu alıyoruz (Pazartesi = 1, Pazar = 0)
+                let firstDayWeekday = firstDayOfMonth.getDay() || 7; // 0 = Pazar ise 7 yapıyoruz
+                firstDayWeekday--; // 0 = Pazartesi olacak şekilde ayarlıyoruz
+                
+                // Önceki ayın son günlerini hesapla
+                const prevMonth = new Date(year, month, 0);
+                const prevMonthDays = prevMonth.getDate();
+                
+                // Tüm günleri temizle
+                const calendarDays = document.getElementById('calendarDays');
+                calendarDays.innerHTML = '';
+                
+                // Önceki ayın son günlerini ekle
+                for (let i = firstDayWeekday - 1; i >= 0; i--) {
+                    const day = document.createElement('div');
+                    day.classList.add('day', 'inactive');
+                    day.textContent = prevMonthDays - i;
+                    calendarDays.appendChild(day);
+                }
+                
+                // Mevcut ayın günlerini ekle
+                for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
+                    const day = document.createElement('div');
+                    day.classList.add('day');
+                    
+                    // Bu gün bir etkinliğe sahip mi kontrol et
+                    const currentDateCheck = new Date(year, month, i);
+                    const eventForDay = events.find(event => 
+                        event.date.getDate() === currentDateCheck.getDate() && 
+                        event.date.getMonth() === currentDateCheck.getMonth() && 
+                        event.date.getFullYear() === currentDateCheck.getFullYear()
+                    );
+                    
+                    if (eventForDay) {
+                        day.classList.add('event');
+                        const span = document.createElement('span');
+                        span.textContent = i;
+                        day.appendChild(span);
+                        
+                        const tooltip = document.createElement('div');
+                        tooltip.classList.add('event-tooltip');
+                        const tooltipText = document.createElement('span');
+                        tooltipText.textContent = eventForDay.title;
+                        tooltip.appendChild(tooltipText);
+                        day.appendChild(tooltip);
+                    } else {
+                        day.textContent = i;
+                    }
+                    
+                    calendarDays.appendChild(day);
+                }
+                
+                // Sonraki ayın ilk günlerini ekle
+                const daysNeeded = 42 - (firstDayWeekday + lastDayOfMonth.getDate());
+                for (let i = 1; i <= daysNeeded; i++) {
+                    const day = document.createElement('div');
+                    day.classList.add('day', 'inactive');
+                    day.textContent = i;
+                    calendarDays.appendChild(day);
+                }
+            }
+            
+            // İlk kez takvimi oluştur
+            renderCalendar();
+            
+            // Önceki ay butonu
+            document.getElementById('prevMonth').addEventListener('click', function() {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                renderCalendar();
+            });
+            
+            // Sonraki ay butonu
+            document.getElementById('nextMonth').addEventListener('click', function() {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                renderCalendar();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+// URL'den "index.html" ifadesini kaldır
+if(window.location.href.indexOf("index.html") > -1) {
+    var cleanURL = window.location.href.replace(/\/index.html$/, '/');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>IEEE THKÜ - Sponsorluk</title>
+    <meta name="description" content="IEEE THKÜ Öğrenci Kolu sponsorları ve anlaşmalı kurumlar. Sponsorluk fırsatları ve indirim anlaşmaları hakkında bilgi.">
+    <meta name="keywords" content="IEEETHKÜ, ieee, ieeeutaa, IEEEUTAA, utaa, ieee utaa, ieee thkü, ieee thk, thkü ieee, utaa ieee, sponsorluk, indirim, anlaşmalı kurumlar">
+    <meta name="theme-color" content="#517c97">
+    <meta name="language" content="Turkish">
+    <link rel="icon" type="image/png" sizes="300x250" href="../assets/img/ieeethku.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+
+<body class="sponsorluk-page">
+    <div id="top">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/ieeethkumavi.png" alt="IEEE UTAA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../hakkimizda/yonetim/index.html">Yönetim Kurulu</a>
+                                <a class="dropdown-item" href="../hakkimizda/idari/index.html">İdari Kurul</a>
+                                <a class="dropdown-item" href="../hakkimizda/denetim/index.html">Danışma Denetim Kurulu</a>
+                                <a class="dropdown-item" href="../hakkimizda/niyet/index.html">Niyet Mektupları</a>
+                                <a class="dropdown-item" href="../assets/belgeler/2425tuzuk.pdf">Güncel Tüzük</a>
+                                <a class="dropdown-item" href="../hakkimizda/ekipler/index.html">Eski Ekiplerimiz</a>
+                                <a class="dropdown-item" href="../hakkimizda/emegigecenler/index.html">Emeği Geçenler</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownKomite" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Komitelerimiz
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownKomite">
+                                <a class="dropdown-item" href="../komiteler/aess/index.html">AESS - Havacılık ve Uzay Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/cs/index.html">CS - Bilgisayar Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/dp/index.html">DP - Dijital Yayıncılık Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ea/index.html">EA - Educational Activities Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ide/index.html">IDE - Fikir Komitesi</a>
+                                
+                                <a class="dropdown-item" href="../komiteler/pes/index.html">PES - Güç ve Enerji Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/ras/index.html">RAS - Robotik ve Otomasyon Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/sosyo/index.html">ST - Sosyo Teknik Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/tk/index.html">TT - Tanıtım ve Tasarım Komitesi</a>
+                                <a class="dropdown-item" href="../komiteler/wie/index.html">WIE - Mühendislikte Kadınlar Komitesi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../etkinlikler/index.html">Etkinliklerimiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../blog/index.html">Blog ve Haberler</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#" style="position: relative; font-weight: bold; color: white !important; background-color: var(--main-color); border-radius: 8px; box-shadow: 0 0 20px rgba(81, 124, 151, 0.7); padding: 8px 12px; margin: -8px 0; transform: scale(1.1); z-index: 100; text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Sponsorluk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://forms.gle/4a8YBsiRfZxEAsgx6">Üye Ol</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Başlık Kısmı -->
+    <div class="sponsor-header">
+        <h1>SPONSORLARIMIZ</h1>
+    </div>
+
+    <!-- IEEE THKÜ Kart Bölümü -->
+    <div class="container mt-5 mb-5">
+        <h2 class="section-title">IEEE THKÜ KART</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="sponsor-card ieee-card">
+                    <div class="sponsor-image">
+                        <img src="../assets/img/etkinlikkare1.png" alt="TechSpire Kart" class="img-fluid">
+                    </div>
+                    <h3 class="sponsor-title">TechSpire</h3>
+                    <p class="sponsor-description">IEEE THKÜ Öğrenci Kolu tarafından tasarlanan TechSpire kart, üyelerimize özel ayrıcalıklar ve indirimler sağlamaktadır. Kart sahibi olan üyelerimiz anlaşmalı olduğumuz tüm yerlerde indirimlerden faydalanabilirler.</p>
+                    <a href="#anlasmaliyerler" class="sponsor-website">İndirimli Yerler İçin Tıklayın</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ekipman Sponsoru Bölümü -->
+    <div style="background-color: #f5f5f5; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">EKİPMAN SPONSORUMUZ</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="sponsor-card equipment-sponsor">
+                        <div class="sponsor-image">
+                            <img src="../assets/img/etkinlikkare2.png" alt="Ekipman Sponsoru Logo" class="img-fluid">
+                        </div>
+                        <h3 class="sponsor-title">Teknik Ekipman LTD</h3>
+                        <p class="sponsor-description">Etkinliklerimizde kullandığımız teknik ekipmanları sağlayan değerli sponsorumuz. Konferanslar, workshoplar ve çeşitli etkinliklerde ihtiyaç duyduğumuz teknik altyapıyı sunmaktadır.</p>
+                        <a href="https://www.example.com/teknikekipman" target="_blank" class="sponsor-website">Websitesini Ziyaret Et</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anlaşmalı Yerler Bölümü -->
+    <div class="container partner-section" id="anlasmaliyerler">
+        <div class="text-center mb-4">
+            <h2 class="section-title" style="display: inline-block; position: relative; padding-bottom: 15px;">ANLAŞMALI YERLER
+                <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: var(--main-color);"></span>
+            </h2>
+        </div>
+        <p class="text-center mb-5">Techspire kart sahibi IEEE THKÜ Öğrenci Kolu üyelerimize özel indirim sağlayan anlaşmalı kurumlar.</p>
+        
+        <!-- İstanbul -->
+        <h3 class="semt-title mb-4">İstanbul</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Dyt. Şevkiye Çavuşoğlu</h3>
+                    <p class="partner-details">0(501)128 3887 numaralı hattan randevu oluşturarak online şekilde beslenme danışmanlığı alabilirsiniz.</p>
+                    <p class="partner-note">İndirim her seans için geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 25%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kızılay -->
+        <h3 class="semt-title mb-4 mt-5">Kızılay</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Anka Konutları (Anka Palas)</h3>
+                    <p class="partner-details">Cumartesi günü yapılcak konaklamada indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Çikolata Kuşağı</h3>
+                    <p class="partner-details">Her türlü işlem için indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Monopol Cafe</h3>
+                    <p class="partner-details">Her türlü alışverişte indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Uykusuzlar Pub</h3>
+                    <p class="partner-details">Her türlü alışverişte indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Gaziantep Sokak Lezzetleri</h3>
+                    <p class="partner-details">Her türlü alışverişte indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">SOI Coffee Co.</h3>
+                    <p class="partner-details">Sadece içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Sam Cafe</h3>
+                    <p class="partner-details">Her türlü üründe geçerli</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Etimesgut -->
+        <h3 class="semt-title mb-4 mt-5">Etimesgut</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Kahveci Sr</h3>
+                    <p class="partner-details">Her türlü üründe indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">NorDic Coffea</h3>
+                    <p class="partner-details">Americano, filtre kahve, türk kahvesi, kahve dışı ürünler ve kasaönü ürünlerde indirim geçerli değildir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Mackbear Coffee Co.</h3>
+                    <p class="partner-details">Sadece içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 365 Avm -->
+        <h3 class="semt-title mb-4 mt-5">365 Avm</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Biso Cafe</h3>
+                    <p class="partner-details">Her türlü yiyecek ve içeceklerde indirim geçerlidir. Sessiz oda ücretleri indirime dahil değildir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bahçelievler -->
+        <h3 class="semt-title mb-4 mt-5">Bahçelievler</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Cake Art Homemade</h3>
+                    <p class="partner-details">Her türlü alışverişte indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">D-Dose</h3>
+                    <p class="partner-details">Her türlü alışverişte indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Skal Coffee</h3>
+                    <p class="partner-details">Her türlü üründe indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Zehra Coffee & More</h3>
+                    <p class="partner-details">Sadece içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Müjgan Bahçelievler</h3>
+                    <p class="partner-details">Her türlü yiyecek ve içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Chocomar Bahçelievler</h3>
+                    <p class="partner-details">Her türlü üründe indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Batımerkez -->
+        <h3 class="semt-title mb-4 mt-5">Batımerkez</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Aşina Kuaför</h3>
+                    <p class="partner-details">Her türlü işlem için indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Tost Express</h3>
+                    <p class="partner-details">Her türlü üründe indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Strada Coffee Shop</h3>
+                    <p class="partner-details">Çay, su ve türk kahvesi bu ürünler indirime dahil değildir. Kahve çeşitleri ve yiyecekler indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Dia Coffe and Bakery</h3>
+                    <p class="partner-details">İndirim sadece kahvelerde ya da kahve + yiyeceklerde geçerlidir. Sadece yiyeceklerde indirim geçerli değildir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tunalı -->
+        <h3 class="semt-title mb-4 mt-5">Tunalı</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Hayyami</h3>
+                    <p class="partner-details">Sadece içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 15%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">INK STREET TATTOO</h3>
+                    <p class="partner-details">İndirim dövme ya da piercing için geçerlidir. İndirimli fiyat üzerinden bir daha indirim uygulanmayacaktır.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Coffee Bus</h3>
+                    <p class="partner-details">Sadece içeceklerde indirim geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 10%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- İstanbul-Ankara -->
+        <h3 class="semt-title mb-4 mt-5">İstanbul-Ankara</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Macera Adası</h3>
+                    <p class="partner-details">İndirim bilgisi belirtilmemiş.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cebeci -->
+        <h3 class="semt-title mb-4 mt-5">Cebeci</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="partner-card">
+                    <h3 class="partner-title">Game On Cafe</h3>
+                    <p class="partner-details">Sadece IBAN ve Nakit ödemelerinde geçerlidir.</p>
+                    <p class="partner-discount">İndirim Oranı: 20%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-dark">
+        <div class="container-fluid">
+            <p class="copyright">2025 Copyright © Tüm Hakları Saklıdır. IEEE THKÜ Öğrenci Kolu</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/ieeethku/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ieeethku/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://taplink.cc/ieeethku" target="_blank"><i class="fa fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/counter.js"></script>
+    <script src="../assets/js/untitled.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const socialLinks = document.querySelector('.social-links');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                socialLinks.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                socialLinks.classList.remove('visible');
+            }
+        });
+
+        // Sayfa içi yumuşak kaydırma efekti
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tüm iç bağlantıları seç (özellikle indirimli yerler butonu için)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Hedef elemana yumuşak şekilde kaydır
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // URL'e hash ekle (ama sayfayı kaydırma)
+                        try {
+                            history.pushState(null, null, targetId);
+                        } catch (e) {
+                            console.warn("History API'sini kullanırken bir hata oluştu: ", e);
+                            // Alternatif olarak hash'i değiştir
+                            window.location.hash = targetId;
+                        }
+                    }
+                });
+            });
+        });
+
+        // Manuel olarak Sponsorluk menüsünü aktifleştir
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Sponsorluk sayfası yüklendi - manuel aktifleştirme başlıyor");
+            
+            // Önce TÜM linklerdeki active sınıflarını temizle
+            document.querySelectorAll('.nav-link').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Dropdown linklerinden de active sınıfını kaldır
+            document.querySelectorAll('.nav-link.dropdown-toggle').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            // Hakkımızda menüsünden kesinlikle active sınıfını kaldır
+            const hakkimizdaLink = document.querySelector('.nav-link.dropdown-toggle[id="navbarDropdown"]');
+            if (hakkimizdaLink && hakkimizdaLink.classList.contains('active')) {
+                hakkimizdaLink.classList.remove('active');
+                console.log("Hakkımızda menüsünden active sınıfı kaldırıldı");
+            }
+            
+            // Sponsorluk menüsünü aktifleştir
+            const sponsorlukLink = document.querySelector('.nav-link[href="#"]');
+            if (sponsorlukLink) {
+                sponsorlukLink.classList.add('active');
+                console.log("Sponsorluk menüsü manuel olarak aktifleştirildi");
+                
+                // Aktifleştirme için global değişken tanımla
+                window.menuManuallyActivated = true;
+                console.log("menuManuallyActivated = true olarak ayarlandı");
+            } else {
+                console.error("Sponsorluk menüsü bulunamadı!");
+            }
+        });
+    </script>
+</body>
+
+</html>
